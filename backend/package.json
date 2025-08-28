@@ -1,0 +1,39 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch --loader ts-node/esm src/server.ts",
+    "dev": "dotenv -e .env.local -- node --watch --loader ts-node/esm src/server.ts",
+    "lint": "eslint 'src/**/*.ts'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.0",
+    "dotenv": "^17.2.1",
+    "dotenv-cli": "^10.0.0",
+    "eslint": "^9.34.0",
+    "install": "^0.13.0",
+    "npm": "^11.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.876.0",
+    "@aws-sdk/credential-providers": "^3.876.0",
+    "@aws-sdk/s3-request-presigner": "^3.876.0",
+    "@fastify/cors": "^11.1.0",
+    "@fastify/multipart": "^9.0.3",
+    "assemblyai": "^4.15.0",
+    "fastify": "^5.5.0",
+    "file-type": "^21.0.0",
+    "openai": "^5.15.0",
+    "pg": "^8.16.3",
+    "zod": "^3.25.76"
+  }
+}
