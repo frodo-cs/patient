@@ -9,6 +9,9 @@ permissions:
   id-token: write
   contents: read
 
+env:
+  VITE_BASE_URL: ${{ secrets.VITE_BASE_URL }}
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
