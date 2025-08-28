@@ -14,7 +14,6 @@
   "type": "module",
   "devDependencies": {
     "@eslint/js": "^9.34.0",
-    "@types/express": "^5.0.3",
     "@types/node": "^24.3.0",
     "dotenv": "^17.2.1",
     "dotenv-cli": "^10.0.0",
